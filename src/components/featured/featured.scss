@@ -1,0 +1,61 @@
+.featured {
+    height: 90vh;
+    position: relative;
+
+    img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .info {
+        width: 35%;
+        position: absolute;
+        left: 70px;
+        bottom: 105px;
+        color: white;
+        display: flex;
+        flex-direction: column;
+
+        img {
+            width: 400px;
+        }
+
+        .desc {
+            margin: 20px 0px;
+        }
+
+        .buttons {
+            display: flex;
+            gap: 0.8rem;
+
+            button {
+                padding: 5px 18px;
+                border: none;
+                border-radius: 3px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 5px;
+                font-size: 1.25rem;
+                font-weight: 500;
+                cursor: pointer;
+                // font-weight: 500;
+                
+                .icon {
+                    font-size: 2rem;
+                }
+
+                &.play {
+                    background-color: white;
+                    color: var(--main-color);
+                }
+
+                &.more {
+                    background-color: rgb(128, 128, 128,0.5);
+                    color: white;
+                }
+            }
+        }
+    }
+}

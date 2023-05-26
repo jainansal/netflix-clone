@@ -1,69 +1,81 @@
 .navbar {
     color: white;
-    width: 100%;
+    padding: 1.1rem 3.5rem;
     position: fixed;
-    top: 0;
-    font-size: 17px;
-    padding-right: 25px;
-    padding-left: 12px;
+    width: 100%;
     z-index: 999;
+    top: 0;
+    background: linear-gradient(to top, transparent 0%, rgb(0,0,0,0.4) 50%);
+
+    &.scrolled {
+        background-color: var(--main-color);
+    }
+
     .container {
         display: flex;
         align-items: center;
         justify-content: space-between;
 
-        
-
         .left {
             display: flex;
             align-items: center;
-            gap: 2rem;
-            img {
-                height: 5rem;
-            }
+            gap: 1.2rem;
+            font-size: 0.9rem;
+
             span {
                 cursor: pointer;
+            }
+
+            img {
+                height: 1.9rem;
+                margin-right: 1.3rem;
             }
         }
 
         .right {
             display: flex;
             align-items: center;
-
+            gap: 1.2rem;
+            
             .icon {
-                margin: 0 1.2rem;
+                font-size: 1.8rem;
                 cursor: pointer;
             }
 
             img {
-                width: 3rem;
-                height: 3rem;
-                border-radius: 0.2rem;
+                height: 2rem;
+                width: 2rem;
+                border-radius: 0.25rem;
                 object-fit: cover;
                 cursor: pointer;
             }
 
             .profile {
+
                 .options {
                     display: none;
+                    flex-direction: column;
+                    position: absolute;
                     background-color: var(--main-color);
-                    border-radius: 8px;
-                }
+                    right: 2.5rem;
+                    border-radius: 0.1rem;
 
-                span {
-                    padding: 10px;
-                    cursor: pointer;
+                    span {
+                        font-size: 0.9rem;
+                        padding: 0.5rem;
+                        cursor: pointer;
+                    }
                 }
 
                 &:hover {
                     .options {
                         display: flex;
-                        flex-direction: column;
-                        position: absolute;
-                        
                     }
                 }
+                
             }
+
+            
         }
     }
 }
