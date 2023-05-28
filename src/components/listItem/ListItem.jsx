@@ -34,16 +34,13 @@ function ListItem({ index }) {
           </div>
         </div>
         <div className="item-info-top">
-          <span>1 hour 14 mins</span>
-          <span className="age-limit">+16</span>
-          <span>1999</span>
+          <span className="child-rating">A</span>
+          <span className="duration">1h 14m</span>
+          <span className="quality">HD</span>
         </div>
-        <div className="desc">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi
-          nesciunt maxime explicabo mollitia dolore, non hic, commodi totam
-          natus eaque perspiciatis animi quo enim obcaecati?
+        <div className="genre">
+          Horror • Evil Kid • 1980s
         </div>
-        <div className="genre">Action</div>
       </div>
     </div>
     </div>

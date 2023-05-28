@@ -23,7 +23,7 @@
 
     &:hover {
       width: 323px;
-      height: 300px;
+      height: 280px;
       top: -100px;
       left: -40px;
       position: absolute;
@@ -50,71 +50,58 @@
           }
           .icon {
             padding: 0.3rem;
-            color: white;
+            color: rgb(255, 255, 255,0.4);
             background-color: rgb(128, 128, 128, 0.2);
             border-radius: 100%;
-            border: 1px solid white;
+            border: 1px solid rgb(255, 255, 255,0.4);
             width: 2.5rem;
             height: 2.5rem;
-          }
 
+            &:hover {
+              color: white;
+              border: 1px solid white;
+            }
+          }
+          
           .play {
             color: black;
             background-color: white;
             border-radius: 100%;
+
+            &:hover {
+              color: black;
+              background-color: rgb(255, 255, 255,0.8);
+            }
           }
+        }
+
+        .item-info-top {
+          display: flex;
+          flex-direction: row;
+          margin-top: 0.5rem;
+          margin-left: 0.2rem;
+          gap: 4%;
+          align-items: center;
+
+          .child-rating {
+            border: 1px solid rgb(255, 255, 255,0.7);
+            padding: 0 3%;
+          }
+
+          .quality {
+            font-size: 0.75rem;
+            border: 1px solid rgb(255, 255, 255,0.7);
+            padding: 0 2%;
+            border-radius: 0.2rem;
+          }
+        }
+
+        .genre {
+          margin-top: 0.75rem;
+          margin-left: 0.2rem;
         }
       }
     }
-
-    // &:hover {
-    //   position: absolute;
-    //   width: 323px;
-    //   height: 300px;
-    //   top: -100px;
-    //   left: -30px;
-
-    //   -webkit-box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 1);
-    //   -moz-box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 1);
-    //   box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 1);
-
-    //   img {
-    //     height: 140px;
-    //   }
-
-    //   .item-info {
-    //     z-index: 99;
-    //     background-color: var(--main-color);
-    //     padding: 0.5rem;
-    //     .icons {
-    //       display: flex;
-    //       justify-content: space-between;
-
-    //       .left {
-    //         display: flex;
-    //         gap: 0.4rem;
-    //       }
-
-    //       .icon {
-    //         padding: 0.3rem;
-    //         color: white;
-    //         background-color: rgb(128, 128, 128, 0.2);
-    //         border-radius: 100%;
-    //         border: 1px solid white;
-    //         width: 2.5rem;
-    //         height: 2.5rem;
-    //       }
-
-    //       .play {
-    //         color: black;
-    //         background-color: white;
-    //         border-radius: 100%;
-    //       }
-    //     }
-    //   }
-
-    //   z-index: 99;
-    // }
   }
 }
 

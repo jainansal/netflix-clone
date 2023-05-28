@@ -1,0 +1,29 @@
+.register {
+  width: 100vw;
+  height: 100vh;
+  // overflow-y: hidden;
+  background-image: url("https://winbuzzer.com/wp-content/uploads/2019/01/netflix-reuse-official.jpg");
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 2.5%;
+  z-index: 0;
+
+  &::before {
+    z-index: -1;
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color: rgba(0, 0, 0, 0.75);
+  }
+
+  .logo {
+    height: 7.5%;
+    width: max-content;
+  }
+}
