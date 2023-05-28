@@ -1,4 +1,5 @@
 import React from "react";
+import { Navigate } from "react-router-dom";
 import "./navbar.scss"
 import NotificationsIcon from '@mui/icons-material/Notifications';
 import SearchIcon from '@mui/icons-material/Search';
@@ -7,10 +8,21 @@ import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 function Navbar() {
 
     const [onTop, setOnTop] = React.useState(true);
+    const [redirect, setRedirect] = React.useState(false)
 
     window.onscroll = () => {
         setOnTop(window.scrollY === 0 ? true : false)
         return () => (window.onscroll = null)
+    }
+
+    const logout = () => {
+        setRedirect(true)
+    }
+
+    if(redirect) {
+        return(
+            <Navigate to={'/login'} />
+        )
     }
 
   return (
@@ -36,7 +48,7 @@ function Navbar() {
                     <ArrowDropDownIcon className="icon"/>
                     <div className="options">
                         <span>Settings</span>
-                        <span>Logout</span>
+                        <span onClick={logout}>Logout</span>
                     </div>
                 </div>
             </div>

@@ -1,13 +1,18 @@
 import "./loginForm.scss";
 
-function LoginForm() {
+function LoginForm(props) {
   return (
     <div className="login-form">
       <div className="heading">Sign In</div>
       <div className="input-fields">
         <input className="email" type="email" placeholder="Email" />
         <input className="password" type="password" placeholder="Password" />
-        <div className="submit-button">Sign In</div>
+        <div 
+            className="submit-button"
+            onClick={props.handleClick}
+        >
+            Sign In
+        </div>
       </div>
       <div className="footer">
         <p>

@@ -1,12 +1,24 @@
+import React from "react";
+import { Navigate } from "react-router-dom";
 import { EmojiFlags, KeyboardBackspace } from "@mui/icons-material";
 import "./watch.scss";
 
 function Watch() {
+  const [redirect, setRedirect] = React.useState(false);
+
+  const back = () => {
+    setRedirect(true);
+  };
+
+  if (redirect) {
+    return <Navigate to={"/"} />;
+  }
+
   return (
     <div className="watch">
       <div className="top-buttons">
-        <KeyboardBackspace className="icon"/>
-        <EmojiFlags className="icon"/>
+        <KeyboardBackspace className="icon" onClick={back} />
+        <EmojiFlags className="icon" />
       </div>
       <video
         className="video"
