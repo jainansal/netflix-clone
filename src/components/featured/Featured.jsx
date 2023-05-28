@@ -1,9 +1,11 @@
 import React from 'react'
 import './featured.scss'
-import PlayArrowIcon from '@mui/icons-material/PlayArrow';
+import PlayArrowRoundedIcon from '@mui/icons-material/PlayArrowRounded';
 import InfoOutlinedIcon from '@mui/icons-material/InfoOutlined';
 
 function Featured({type}) {
+
+
   return (
     <div className='featured'>
         {
@@ -30,7 +32,7 @@ function Featured({type}) {
             )
         }
         <img 
-        src="https://images.ctfassets.net/4cd45et68cgf/5a0IreQXrb75yZWvogHLh4/f5d183204c31841695c4e562ed168813/Web-8464.jpg?w=2560" alt="netflix-bg" />
+         src="https://images.ctfassets.net/4cd45et68cgf/5a0IreQXrb75yZWvogHLh4/f5d183204c31841695c4e562ed168813/Web-8464.jpg?w=2560" alt="netflix-bg" />
 
         <div className="info">
             <img src="https://www.pngmart.com/files/22/The-Martian-PNG-Picture.png" alt="movie-title" />
@@ -39,7 +41,7 @@ function Featured({type}) {
             </span>
             <div className="buttons">
                 <button className="play">
-                    <PlayArrowIcon className='icon'/>
+                    <PlayArrowRoundedIcon className='icon'/>
                     Play
                 </button>
                 <button className="more">

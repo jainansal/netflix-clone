@@ -51,30 +51,47 @@
             gap: 0.8rem;
 
             button {
-                padding: 5px 18px;
+                padding: 0 24px;
                 border: none;
                 border-radius: 3px;
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                gap: 5px;
+                gap: 12px;
                 font-size: 1.25rem;
                 font-weight: 500;
                 cursor: pointer;
-                // font-weight: 500;
+                font-weight: 600;
                 
                 .icon {
-                    font-size: 2rem;
+                    font-size: 3rem;
                 }
 
                 &.play {
                     background-color: white;
                     color: var(--main-color);
+                    gap:2px;
+
+                    .icon {
+                        margin-left: -12px;
+                    }
+
+                    &:hover {
+                        background-color: rgb(255, 255, 255,0.8);
+                    }
                 }
 
                 &.more {
                     background-color: rgb(128, 128, 128,0.5);
                     color: white;
+
+                    .icon {
+                        font-size: 2rem;
+                    }
+
+                    &:hover {
+                        background-color: rgb(128, 128, 128,0.3);
+                    }
                 }
             }
         }
